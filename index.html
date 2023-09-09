@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="assets/css/input.css">
+    <script defer src="assets/js/script.js"></script>
+</head>
+<body class="font-serif ">
+    <section class="w-screen h-screen relative flex justify-center items-center container mx-auto py-10 flex-wrap ">
+        <h1 class="text-center text-4xl md:text-5xl  w-full">Tic Tac Toe</h1>
+        <div id="GameBoard" class="flex border-4 border-black flex-wrap w-[300px] h-[300px] md:w-[700px] md:h-[700px] ">
+            <div class="w-1/3 h-1/3 border-4 shadow-md border-black flex justify-center items-center text-[80px]  md:text-[200px] uppercase cursor-pointer" data-which-house="0" data-is-full="false">  </div>
+            <div class="w-1/3 h-1/3 border-4 shadow-md border-black flex justify-center items-center text-[80px]  md:text-[200px] uppercase cursor-pointer" data-which-house="1" data-is-full="false">  </div>
+            <div class="w-1/3 h-1/3 border-4 shadow-md border-black flex justify-center items-center text-[80px]  md:text-[200px] uppercase cursor-pointer" data-which-house="2" data-is-full="false">  </div>
+            <div class="w-1/3 h-1/3 border-4 shadow-md border-black flex justify-center items-center text-[80px]  md:text-[200px] uppercase cursor-pointer" data-which-house="3" data-is-full="false">  </div>
+            <div class="w-1/3 h-1/3 border-4 shadow-md border-black flex justify-center items-center text-[80px]  md:text-[200px] uppercase cursor-pointer" data-which-house="4" data-is-full="false">  </div>
+            <div class="w-1/3 h-1/3 border-4 shadow-md border-black flex justify-center items-center text-[80px]  md:text-[200px] uppercase cursor-pointer" data-which-house="5" data-is-full="false">  </div>
+            <div class="w-1/3 h-1/3 border-4 shadow-md border-black flex justify-center items-center text-[80px]  md:text-[200px] uppercase cursor-pointer" data-which-house="6" data-is-full="false">  </div>
+            <div class="w-1/3 h-1/3 border-4 shadow-md border-black flex justify-center items-center text-[80px]  md:text-[200px] uppercase cursor-pointer" data-which-house="7" data-is-full="false">  </div>
+            <div class="w-1/3 h-1/3 border-4 shadow-md border-black flex justify-center items-center text-[80px]  md:text-[200px] uppercase cursor-pointer" data-which-house="8" data-is-full="false">  </div>
+        </div>
+        <h2 id="Status" class="text-center text-4xl md:text-5xl  w-full">Is O?</h2>
+        <section id="WinnerBoard" class="hidden backdrop-blur-lg  absolute  flex-col space-y-5 justify-center items-center w-[300px] h-[300px] md:w-[700px] md:h-[700px]">
+            <h2 id="WinnerStatus" class="text-center text-4xl text-green-600">X is winner</h2>
+            <button class="text-center rounded-md px-10 py-3 text-2xl transition text-blue-600 hover:bg-slate-200" onclick="location.reload()">Restart</button>
+        </section>
+    </section>  
+   
+</body>
+</html>
